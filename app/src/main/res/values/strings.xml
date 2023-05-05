@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">yAssess 2023</string>
+    <string name="splash_image">Splash Image</string>
+    <string name="preview_area">Preview Area</string>
+    <string name="capture">Capture</string>
+    <string name="how_it_work_details"> <b>If invited on email:</b>\n\n<b>1.</b> Enter the email id on which the invitation has been sent\n<b>2.</b> Login with your credentials or Register yourself\n<b>3.</b> Give Test</string>
+    <string name="how_it_work_details_passkey"> <b>If you have passkeys:</b>\n\n<b>1.</b> Enter Passkey\n<b>2.</b> Login with your credentials or Register yourself\n<b>3.</b> Give Test</string>
+    <string name="tab">\u0009\u0009\u0009\u0009</string>
+    <string name="instructions"><b>INSTRUCTIONS</b>\n
+        \u0009\u0009\n\n\u2022\u0009This is a self adaptive intelligent test.\n
+        \u0009\u0009\n\n\u2022\u0009This test has 20 questions.\n
+        \u0009\u0009\n\n\u2022\u0009It will take approximately 40 minutes to attempt all the questions.\n
+        \u0009\u0009\n\n\u2022\u0009You will see 1 question at a time. All questions are compulsory. You cannot skip any question.\n
+        \u0009\u0009\n\n\u2022\u0009You will get only one attempt at all questions. A question once attempted will not appear again.\n
+        \u0009\u0009\n\n\u2022\u0009Please note that this examination does not constitute any offer of employment by any/all participating organization.\n
+        \u0009\u0009\n\n\u2022\u0009Your admission to this examination is strictly provisional. Before giving an examination please ensure that you are eligible according to eligibility criteria.\n
+        \u0009\u0009\n\n\u2022\u0009While the assessment is going on, Youth4Work monitors every activity:\n
+        \u0009\u0009\u0009\u0009\u0009\u0009\n\n\u2022\u0009Your browsing movements.\n
+        \u0009\u0009\u0009\u0009\u0009\u0009\n\n\u2022\u0009Time taken to attempt each question.\n
+        \u0009\u0009\u0009\u0009\u0009\u0009\n\n\u2022\u0009Your IP address\n
+        \u0009\u0009\n\n\u2022\u0009If at any time during the assessments, you move away from the browser tab, your assessment ends and your score will be calculated based on the questions attempted till that time.\n
+        \u0009\u0009\n\n\u2022\u0009Hence, do not minimize the assessment tab or open new tab, or copy any question, etc.\n
+        \u0009\u0009\n\n\u2022\u0009You will be visually monitored through your webcam. Random photos will be clicked during the course of assessment to check for any fraud.\n
+        \u0009\u0009\n\n\u2022\u0009You will be solely responsible for any malpractice.\n
+        \u0009\u0009\n\n\u2022\u0009In case of internet breakdown, you will not be able to proceed. Take a screenshot of the page you are on with the clock for time stamp and send on support@youth4work.com\n
+        \n\nIf you have read and understood the instructions please click <b>"OK, BEGIN TEST"</b> button
+    </string>
+
+    <string name="service_not_available">Service not available</string>
+    <string name="no_address_found">No address found</string>
+    <string name="confirm">Confirm</string>
+    <string name="next">Next</string>
+
+    //Dialog message
+    <string name="varifyMobileNo4Forums">Please verify your mobile number\ Email-Id to submit your data!!</string>
+    <string name="daily_limit_title">Daily free question limit has reached</string>
+    <string name="daily_limit_message">Do you want to attempt more questions and prepare better?</string>
+    <string name="quest_bank_over_title">Questions Bank Over</string>
+    <string name="quest_bank_over_msg">No more questions left to attempt.Please wait for us to add new questions.</string>
+    <string name="ok">OK</string>
+    <string name="update_title">New Version Arrived</string>
+    <string name="update_message">Please Update App</string>
+    <string name="download_company_app">This app is for students. Click Ok to access our recruiter’s app.</string>
+    <string name="cancle">CANCEL</string>
+    <string name="free_trail_expire_title">Free Trail Expired</string>
+    <string name="free_trail_expire_msg">Free question limit has reached.</string>
+    <string name="verify_content1"><p><b>We will verifying the Phone number:</b></p></string>
+    <string name="verify_content2"><b> Is this OK, or would you like to edit the number?</b></string>
+    <string name="edit_verify">Edit/Verify</string>
+    <string name="verify">Verify</string>
+    <string name="not_now">Not Now</string>
+    <string name="are_u_sure">Are you sure?</string>
+    <string name="quit_test_msg">Quitting will end the test.\n You can\'t resume later.</string>
+    <string name="quit_mock_test_msg">Quitting will submit the test.\n You can resume later.</string>
+    <string name="thanks_msg">Your assessment has been forwarded to the organisation that invited you for it. You will be notified for next steps according to your <b>result and profile</b> Hope you had a good experience and good wishes for your future.</string>
+    <string name="warning_msg">Sorry, Now you cannot attempt the test any more, You tried to minimize/change the screen/window. Result is Submitting only for questions you have attempted. Please contact administration for further queries or support@youth4work.com</string>
+    <string name="title_activity_sign_in">SignIn</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+</resources>

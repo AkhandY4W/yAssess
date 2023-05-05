@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vlonjatg.progressactivity.ProgressRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:progressActivity="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/progressActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/activityToolbar"
+    progressActivity:emptyBackgroundColor="#fbc02d"
+    progressActivity:errorBackgroundColor="#42a5f5"
+    progressActivity:loadingBackgroundColor="#FFFFFF"
+    tools:ignore="MissingPrefix"
+    android:keepScreenOn="true">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                android:id="@+id/daily_test_toolbar"
+                layout="@layout/daily_test_toolbar" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/eight_dp"
+                android:layout_below="@+id/daily_test_toolbar"
+                android:id="@+id/txt_title"
+                android:textColor="@color/txt_black_70"
+                android:textSize="@dimen/text_size_12"
+                android:text="@string/app_name"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/dailyTestRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/txt_title"
+                android:paddingBottom="@dimen/seventy_dp"
+                tools:listitem="@layout/item_option" />
+            <FrameLayout
+                android:id="@+id/layout_time_up"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/txt_title"
+                android:layout_above="@+id/layout"
+                android:visibility="gone"
+                android:background="@color/grey_70">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_size_20"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Time Up"
+                    android:layout_gravity="center"
+                    android:drawablePadding="@dimen/eight_dp"
+                    android:drawableStart="@drawable/ic_baseline_timer_24"/>
+            </FrameLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/layout"
+                android:layout_below="@+id/dailyTestRecyclerView">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Continue"
+                android:textColor="@color/white"
+                android:background="@drawable/black_border"
+                android:layout_below="@+id/dailyTestRecyclerView"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/sixteen_dp"
+                android:layout_marginBottom="@dimen/sixteen_dp"
+                android:id="@+id/btn_continue"
+                android:visibility="gone"
+                android:paddingEnd="@dimen/sixteen_dp"
+                android:paddingStart="@dimen/sixteen_dp"/>
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/camera_view"
+                android:visibility="gone"
+                android:layout_below="@+id/dailyTestRecyclerView"
+                layout="@layout/activity_camera_preview" />
+            </LinearLayout>
+         </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</com.vlonjatg.progressactivity.ProgressRelativeLayout>

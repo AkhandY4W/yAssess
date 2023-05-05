@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/twelve_dp"
+    android:clipToPadding="true"
+    android:elevation="@dimen/eight_dp"
+    app:cardCornerRadius="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/sixteen_dp">
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/img_test"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <TextView
+            android:id="@+id/txt_test_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_test"
+            android:text="Archive"
+            android:layout_marginTop="@dimen/sixteen_dp"
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/txt_test_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_test_status"
+            android:text="ABC Test"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/eight_dp"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/txt_test_creater"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_test_name"
+            android:layout_marginTop="@dimen/eight_dp"
+            android:text="Somos la empresa "
+            android:textColor="@color/text_grey_dark"
+            android:textSize="@dimen/text_size_14" />
+
+
+        <TextView
+            android:id="@+id/txt_test_start_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_test_creater"
+            android:layout_marginTop="@dimen/eight_dp"
+            android:text="Somos la empresa "
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/text_size_12" />
+
+        <Button
+            android:id="@+id/btn_take_test"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:paddingStart="@dimen/sixteen_dp"
+            android:paddingEnd="@dimen/sixteen_dp"
+            android:layout_below="@+id/txt_test_creater"
+            android:layout_marginTop="@dimen/sixteen_dp"
+            android:background="@drawable/state_pressed_ripple"
+            android:text="Take Test"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

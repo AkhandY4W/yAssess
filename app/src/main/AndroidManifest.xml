@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.youth4work.yassess_new">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- [START gcm_permission] -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- [END gcm_permission] -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <permission
+        android:name="com.youth4work.yassess_new.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <permission
+        android:name="android.permission.READ_PHONE_STATE"
+        android:protectionLevel="signature" />
+    <permission
+        android:name="android.permission.GET_ACCOUNTS"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.youth4work.yassess_ytest.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="true" />
+
+    <application
+        android:name="com.youth4work.yassess_new.utils.YAssessApplication"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.youth4work.yassess_new.ui.YouthExtraDetailActivity"
+            android:label="yAssessment"></activity>
+        <activity
+            android:name="com.youth4work.yassess_new.ui.SignInActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_sign_in" />
+        <activity
+            android:name="com.youth4work.yassess_new.ui.PracticeTestActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.youth4work.yassess_new.ui.CameraPreviewActivity" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name="com.youth4work.yassess_new.ui.InstructionsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="Instructions"
+            android:parentActivityName="com.youth4work.yassess_new.ui.TestSelectionActivity" />
+        <activity
+            android:name="com.youth4work.yassess_new.ui.ResultActivity"
+            android:label="Result"
+            android:parentActivityName="com.youth4work.yassess_new.ui.TestSelectionActivity" />
+        <activity
+            android:name="com.youth4work.yassess_new.ui.FixTestActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.youth4work.yassess_new.ui.DailyTestActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.youth4work.yassess_new.ui.AllWebView"
+            android:configChanges="orientation|screenSize"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.youth4work.yassess_new.ui.NoInternetActivity"
+            android:theme="@style/noInternetstyle" />
+        <activity
+            android:name="com.youth4work.yassess_new.ui.TestSelectionActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="com.youth4work.yassess_new.ui.ForgetPasswordActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="Forgot Password"
+            android:parentActivityName="com.youth4work.yassess_new.ui.LoginActivity" />
+        <activity
+            android:name="com.youth4work.yassess_new.ui.RegisterationActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="Registration"
+            android:parentActivityName="com.youth4work.yassess_new.ui.LoginActivity" />
+        <activity
+            android:name="com.youth4work.yassess_new.ui.LoginActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.youth4work.yassess_new.ui.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

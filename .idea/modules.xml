@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/yAssess.iml" filepath="$PROJECT_DIR$/yAssess.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/yAssess.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/yAssess.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/yAssess.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/yAssess.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/yAssess.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/yAssess.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/yAssess.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/yAssess.app.unitTest.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vlonjatg.progressactivity.ProgressRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/progressActivity">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_dummy_practice_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/sixteen_dp"
+        android:layout_marginTop="@dimen/fifty_dp"
+        android:clipToPadding="true"
+        android:elevation="@dimen/eight_dp"
+        app:cardCornerRadius="2dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollIndicators="none"
+        android:scrollbarSize="0dp"
+        android:layout_above="@+id/linear_layout"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/sixteen_dp"
+            tools:context=".ui.InstructionsActivity">
+
+            <TextView
+                android:id="@+id/txt_inst_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="instructions"
+                android:textAllCaps="true"
+                android:visibility="gone"
+                android:textColor="@color/txt_black_70"
+                android:textSize="@dimen/text_size_20"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_inst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/txt_white"
+                android:text="@string/instructions"
+                android:textColor="@color/txt_black_70"
+                android:textSize="@dimen/text_size_16" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/camera_view"
+                layout="@layout/activity_camera_preview" />
+
+        </LinearLayout>
+
+    </ScrollView>
+<LinearLayout
+    android:id="@+id/linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/sixteen_dp"
+    android:orientation="horizontal"
+    android:background="#f5f5f5"
+    android:layout_alignParentBottom="true">
+    <CheckBox
+        android:layout_weight="1"
+        android:id="@+id/inst_check_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_grey_dark"
+        android:text="Read and Understand" />
+
+    <Button
+        android:id="@+id/btn_start_test"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/state_pressed_ripple_grey"
+        android:text="Start Test"
+        android:paddingLeft="@dimen/sixteen_dp"
+        android:paddingRight="@dimen/sixteen_dp"
+        android:textColor="@color/txt_black_30" />
+</LinearLayout>
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</com.vlonjatg.progressactivity.ProgressRelativeLayout>

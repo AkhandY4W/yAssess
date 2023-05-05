@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item android:id="@+id/menu_item_refresh"
+        android:title="Refresh"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_refresh_24" />
+
+    <item android:id="@+id/menu_item_logout"
+        android:title="Logout"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_nav_logout_signout" />
+</menu>
